@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鮨六</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="css/5-1-14.css">
+    <script src="https://kit.fontawesome.com/5263b0ffa5.js" crossorigin="anonymous"></script>
+    <!-- bxslider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $(function () {
+            $('.bxslider').bxSlider({
+                auto: true, // 自動でスライドショーをスタートさせる　（初期値: false）
+                mode: 'fade', // アニメーションの種類「'horizontal'」「'vertical'」「'fade'」　（初期値: 'horizontal'）
+                speed: 900, // アニメーションのスピード　（初期値: 500）
+                pause: 4000, // 画像の切り替わる間隔　（初期値: 4000）
+                pager: false, // 下部にある画像切り替えボタンの表示・非表示　（初期値: true）
+                controls: false // 左右の矢印の表示・非表示　（初期値: true）
+            });
+        });
+    </script>
+    <script src="js/smooth-scroll.js"></script>
+</head>
+
+<body id="menu">
+
+    <div class="page">
+        <div class="aside-main">
+            <aside>
+                <div class="logo-image">
+                    <a href="/"><img src="images/logo.png" alt="鮨六"></a>
+                </div>
+
+                <!-- ハンバーガーメニュー -->
+                <div class="openbtn">
+                    <span></span><span></span><span></span>
+                </div>
+
+                <nav id="g-nav">
+                    <div id="g-nav-list">
+                        <!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+                        <ul>
+                            <li><a href="/">
+                                    <p>Top Page</p>トップページ
+                                </a></li>
+                            <li><a href="menu.html">
+                                    <p>Menu</p>お品書き
+                                </a></li>
+                            <li><a href="info.html">
+                                    <p>Info</p>店舗案内
+                                </a></li>
+                            <li><a href="#">
+                                    <p>Our Pride</p>鮨六のこだわり
+                                </a></li>
+                            <li><a href="#">
+                                    <p>Reservation</p>ご予約
+                                </a></li>
+                            <li><a href="#">
+                                    <p>Topics</p>お知らせ
+                                </a></li>
+
+
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="asidebtn">
+
+                    <a href="">
+                        <p class="aside-menu">menu</p>
+                    </a>
+                    <a href="">
+                        <p class="aside-reserve">ご予約</p>
+                    </a>
+                </div>
+            </aside>
+
+            <main>
+                <div class="oshinagaki">
+                    <div class="title">
+                        <h2>お品書き</h2>
+                        <h3>Menu</h3>
+                    </div>
+                    <div class="main-image-osinagaki">
+                        <img src="images/main-image-osinagaki.jpg" alt="お品書き">
+                    </div>
+                </div>
+                <div class="allmenu">
+                    <div class="dinner">
+                        <div class="title">
+                            <h3>Dinner</h3>
+                            <h2>夜の部</h2>
+                        </div>
+                        <div class="omakase">
+                            <div class="omakase-img">
+                                <!-- <img src="images/omakase.jpg" alt=""> -->
+                                <div class="bxslider">
+                                    <div><img src="images/omakase.jpg" 　alt="中トロ"></div>
+                                    <div><img src="images/omakase2.jpg" alt="季節のデザート"></div>
+                                    <div><img src="images/omakase3.jpg" alt="穴子のだし巻き卵"></div>
+                                    <div><img src="images/omakase4.jpg" alt="あさりの赤だし"></div>
+                                </div>
+                            </div>
+                            <div class="omakase-info">
+                                <h2>おまかせ</h2>
+                                <h1>10,800円</h1>
+                                <h2>造り、季節の二品、特選13貫、蒸し物、赤出し</h2>
+                                <p>※表示はすべて税込価格です。<br>
+                                    ※お好み承ります。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lunch">
+                        <div class="title">
+                            <h3>Lunch</h3>
+                            <h2>昼の部</h2>
+                        </div>
+                        <div class="table">
+                            <!-- 一行目 -->
+                            <div class="menu-info">
+                                <div>
+                                    <img src="images/tokujyou-nigiri@2x.jpg" alt="特上にぎり">
+                                    <p>特上にぎり<br>
+                                        3,300円</p>
+                                </div>
+                                <div> <img src="images/jyou-nigiri@2x.jpg" alt="上にぎり">
+                                    <p>上にぎり<br>
+                                        2,300円</p>
+                                </div>
+                                <div> <img src="images/jyou-tirasi@2x.jpg" alt="上ちらし">
+                                    <p>上ちらし<br>
+                                        1,300円</p>
+                                </div>
+                            </div>
+                            <!-- 二行目 -->
+                            <div>
+                                <h1>盛り合わせ</h1>
+                                <div class="menu-info">
+                                    <div>
+                                        <p>特上盛り合わせ<br>
+                                            3,200円</p>
+                                    </div>
+                                    <div>
+                                        <p>上盛り合わせ<br>
+                                            1,200円</p>
+                                    </div>
+                                    <div>
+                                        <p>盛り合わせ<br>
+                                            3,100円</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 三行目 -->
+                            <div>
+                                <h1>箱ずし</h1>
+                                <div class="menu-info">
+                                    <div>
+                                        <p>上穴子箱ずし<br>
+                                            2,200円</p>
+                                    </div>
+                                    <div>
+                                        <p>穴子箱ずし<br>
+                                            1,200円</p>
+                                    </div>
+                                    <div>
+                                        <p>えび箱ずし<br>
+                                            1,200円</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 四行目 -->
+                            <div>
+                                <h1>お飲み物</h1>
+                                <div class="menu-info">
+                                    <div>
+                                        <p>生ビール<br>
+                                            500 円</p>
+                                    </div>
+                                    <div>
+                                        <p>冷酒（太平洋）<br>
+                                            750 円</p>
+                                    </div>
+                                    <div>
+                                        <p>ジュース<br>
+                                            220 円</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+                <p class="back-top scroll-fade"><a href="#top"><img src="images/pagetopbtn.png" alt=""></a></p>
+
+            </main>
+        </div>
+
+
+        <footer>
+            <div class="reserve">
+                <div class="inner">
+                    <div class="botan">
+                        <div>
+                            <h3>Reservation</h3>
+                            <h2>ご予約・お問い合わせ</h2>
+                        </div>
+                        <a href="">
+                            <p>ご予約はこちら</p>
+                        </a>
+                    </div>
+                    <p>ご予約・お問い合わせはお電話またはメールにてご連絡いただきますようお願いいたします。</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="sushiroku">
+                    <h2>鮨六</h2>
+                    <p>sushiroku</p>
+                </div>
+                <div class="adress">
+                    <div>
+                        <p>〒651-2313　神戸市西区神出町田井359-1</p>
+                        <p>営業時間：11:00～21:00</p>
+                    </div>
+                    <div>
+                        <p>TEL 078-965-2466<br>
+                            （営業時間のみ電話対応可）</p>
+                    </div>
+                </div>
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <ul>
+                    <li><a href="/">トップページ</a></li>
+                    <li><a href="menu.html">お品書き</a></li>
+                    <li><a href="info.html">店舗案内</a></li>
+                    <li><a href="">鮨六のこだわり</a></li>
+                    <li><a href="">ご予約</a></li>
+                    <li><a href="">お知らせ</a></li>
+                </ul>
+                <p><small>©2021 Sushiroku All Rights Reserved.</small></p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+
+    <!-- 自作のJS -->
+    <script src="js/5-1-14.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鮨六</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <!-- グーグルフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+    <!-- ハンバーガーメニュー -->
+    <link rel="stylesheet" type="text/css" href="css/5-1-14.css">
+
+    <!-- スライドショー -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- スライドショーjs -->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $(function () {
+            $('.bxslider').bxSlider({
+                auto: true, // 自動でスライドショーをスタートさせる　（初期値: false）
+                mode: 'fade', // アニメーションの種類「'horizontal'」「'vertical'」「'fade'」　（初期値: 'horizontal'）
+                speed: 800, // アニメーションのスピード　（初期値: 500）
+                pause: 4000, // 画像の切り替わる間隔　（初期値: 4000）
+                pager: false, // 下部にある画像切り替えボタンの表示・非表示　（初期値: true）
+                controls: false // 左右の矢印の表示・非表示　（初期値: true）
+            });
+        });
+    </script>
+    <!-- フォントオーサム -->
+    <script src="https://kit.fontawesome.com/5263b0ffa5.js" crossorigin="anonymous"></script>
+    <!-- スムーズスクロール -->
+    <script src="js/smooth-scroll.js"></script>
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/6-1-8.css">
+</head>
+
+<body id="home">
+
+    <div class="page">
+        <div class="aside-main">
+            <aside>
+                <div class="logo-image">
+                    <a href="/"><img src="images/logo.png" alt="鮨六"></a>
+                </div>
+
+                <!-- ハンバーガーメニュー -->
+                <div class="openbtn">
+                    <span></span><span></span><span></span>
+                </div>
+
+                <nav id="g-nav">
+                    <div id="g-nav-list">
+                        <!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+                        <ul>
+                            <li><a href="#">
+                                    <p>Top Page</p>トップページ
+                                </a></li>
+                            <li><a href="menu.html">
+                                    <p>Menu</p>お品書き
+                                </a></li>
+                            <li><a href="info.html">
+                                    <p>Info</p>店舗案内
+                                </a></li>
+                            <li><a href="#">
+                                    <p>Our Pride</p>鮨六のこだわり
+                                </a></li>
+                            <li><a href="#">
+                                    <p>Reservation</p>ご予約
+                                </a></li>
+                            <li><a href="#">
+                                    <p>Topics</p>お知らせ
+                                </a></li>
+
+
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="asidebtn">
+
+                    <a href="">
+                        <p class="aside-menu">menu</p>
+                    </a>
+                    <a href="">
+                        <p class="aside-reserve">ご予約</p>
+                    </a>
+                </div>
+            </aside>
+
+            <main>
+                <div class="main-image">
+                    <!-- <img src="images/main-image@2x.jpg" alt=""> -->
+                    <div class="bxslider">
+                        <div><img src="images/main-image@2x.jpg"></div>
+                        <div><img src="images/main-image2@2x.jpg"></div>
+                        <div><img src="images/main-image3@2x.jpg"></div>
+                    </div>
+                </div>
+
+                <div class="aboutus">
+                    <h3>About us</h3>
+                    <h2>鮨六について</h2>
+                    <div>
+                        <p>当店は創業当時より兵庫県神戸市にて<br>
+                            鮨屋を営んでおります。<br>
+                            熟練の職人が淡路など近郊を中心に全国から<br>
+                            よりすぐった旬の食材のみを使った握りや一品をご提供します。<br>
+                            四季を感じる至高のお鮨をご堪能ください。
+                        </p>
+                        <a href="">
+                            <p>鮨六のこだわり</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="menu">
+                    <div class="botan">
+                        <div class="inner">
+                            <h3>Menu</h3>
+                            <h2>お品書き</h2>
+                            <a href="menu.html">
+                                <p>一覧へ</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="top-osinagaki">
+                        <!-- <img src="images/top-osinagaki.jpg" alt=""> -->
+                        <ul class="slider">
+                            <li><img src="images/top-osinagaki.jpg" alt=""></li>
+                            <li><img src="images/top-osi3.jpg" alt=""></li>
+                            <li><img src="images/top-osi2.jpg" alt=""></li>
+                            <li><img src="images/top-osi4.jpg" alt=""></li>
+                            <li><img src="images/top-osi5.jpg" alt=""></li>
+                            <!--/slider-->
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="topics">
+                    <div class="inner">
+                        <div class="title">
+                            <div>
+                                <h3>Topics</h3>
+                                <h2>お知らせ</h2>
+                            </div>
+                            <a href="">
+                                <p>一覧へ&nbsp;<i class="fas fa-chevron-right"></i></p>
+                            </a>
+                        </div>
+                        <ul>
+                            <li><a href=""><time datetime="2021-11-06">2021.11.06</time>　営業時間のお知らせ</a></li>
+                            <li><a href=""><time datetime="2021-10-25">2021.10.25</time>　メディアに掲載されました</a></li>
+                            <li><a href=""><time datetime="2021-10-04">2021.10.04</time>　地域共通クーポンのご案内</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="back-top scroll-fade"><a href="#top"><img src="images/pagetopbtn.png" alt=""></a></p>
+            </main>
+        </div>
+
+        <footer>
+            <div class="reserve">
+                <div class="inner">
+                    <div class="botan">
+                        <div>
+                            <h3>Reservation</h3>
+                            <h2>ご予約・お問い合わせ</h2>
+                        </div>
+                        <a href="">
+                            <p>ご予約はこちら</p>
+                        </a>
+                    </div>
+                    <p>ご予約・お問い合わせはお電話またはメールにてご連絡いただきますようお願いいたします。</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="sushiroku">
+                    <h2>鮨六</h2>
+                    <p>sushiroku</p>
+                </div>
+                <div class="adress">
+                    <div>
+                        <p>
+                        <address>〒651-2313　神戸市西区神出町田井359-1</address>
+                        </p>
+                        <p>営業時間：<time>11:00～21:00</time></p>
+                    </div>
+                    <div>
+                        <p>TEL 078-965-2466<br>
+                            （営業時間のみ電話対応可）</p>
+                    </div>
+                </div>
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <ul>
+                    <li><a href="/">トップページ</a></li>
+                    <li><a href="menu.html">お品書き</a></li>
+                    <li><a href="info.html">店舗案内</a></li>
+                    <li><a href="">鮨六のこだわり</a></li>
+                    <li><a href="">ご予約</a></li>
+                    <li><a href="">お知らせ</a></li>
+                </ul>
+                <p><small>&copy; 2021 Sushiroku All Rights Reserved.</small></p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+
+    <!-- ハンバーガーメニューの自作のJS -->
+    <script src="js/5-1-14.js"></script>
+    <!-- slick -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--自作のJS-->
+    <script src="js/6-1-8.js"></script>
+</body>
+</body>
+
+</html>
